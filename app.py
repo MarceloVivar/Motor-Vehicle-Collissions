@@ -5,7 +5,7 @@ import pydeck as pdk
 
 
 
-DATA_URL = ("/Users/apple/Desktop/app_crashes/Motor_Vehicle_Collisions_Crashes.csv")
+DATA_URL = ("Motor_Vehicle_Collisions_Crashes.csv")
 
 st.title("Motor Vehicle Collissions")
 st.markdown("This application is streamlit dashboard that can be used to analyze vehicles motor collisions💥 in NYC 🗽")
@@ -19,7 +19,7 @@ def load_data(nrows):
     data.rename(columns = {"crash_date_crash_time": 'date/time'}, inplace=True)
     return data
 
-data = load_data(80000)   
+data = load_data(100000)   
 
 original_data= data
 
