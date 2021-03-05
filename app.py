@@ -19,7 +19,7 @@ def load_data(nrows):
     data.rename(columns = {"crash_date_crash_time": 'date/time'}, inplace=True)
     return data
 
-data = load_data()   
+data = load_data(80000)   
 
 original_data= data
 
